@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>card display</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style>
+		body {
+			margin: 3%;
+			border: 2px solid black;
+		}
+		.navbar {
+			background-color: grey;
+			margin-left: 2%;
+			margin-right: 2%;
+			margin-top: 2%;
+			margin-bottom: -1%;
+			padding-bottom: -2%;
+		}
+		.navbar ul{
+			display: flex;
+			justify-content: flex-end;
+			list-style-type: none;
+		}
+		.navbar li {
+			margin-top: -6%;
+			margin-left: 1%;
+			margin-right: 2%;
+		}
+		.navbar li input {
+			background-color: grey;
+			border: 1px solid white;
+			border-right: none;
+			color: white;
+			height: 30px;
+			width: 60%;
+		}
+		.navbar li input:focus{
+			outline: none;
+			color: white;
+		}
+		.navbar li button{
+			background-color: #3d3d3d;
+			color: white;
+			border: 0px solid white;
+			border-left: none;
+			height: 35px;
+			cursor: pointer;
+		}
+		.navbar li button:hover{
+			background-color: black;
+			transition: 0.5s ease-in-out;
+		}
+		.navbar a{
+			color: white;
+			text-decoration: none;
+			font-size: 23px;
+		}
+		.card {
+			display: flex;
+			justify-content: center;
+			background-color: grey;
+			margin: 3%;
+			padding: 2%;
+			margin-left: 2%;
+			margin-right: 2%;
+		}
+		.card1{
+			margin-top: 2%;
+			border: 2px solid black;
+			width: 250px;
+			margin-right: 2%;
+			margin-left: 2%;
+		}
+		.card1 div img {
+			 margin-bottom: -40%; 
+			 height: 180px; 
+			 width: 250px;
+		}
+		.purchase {
+			cursor: pointer;
+			background-color: #3d3d3d;
+			margin-top: 36%; 
+			padding-left: 20%; 
+			padding-right: 20%; 
+			text-align: center; 
+			color: white; 
+			padding-top: 3%; 
+			padding-bottom: 3%;
+		}
+		.purchase:hover {
+			background-color: black;
+			transition: 0.5s ease-in-out;
+		}
+
+		@media screen and (max-width: 600px){
+			body {
+				margin: 1%;
+			}
+			.navbar {
+				background-color: grey;
+				margin-left: 2%;
+				margin-right: 2%;
+				margin-top: 2%;
+				margin-bottom: -1%;
+				padding-bottom: -1%;
+			}
+			.navbar ul{
+				display: flex;
+				justify-content: center;
+				list-style-type: none;
+				margin-top:  2%;
+				margin-right: -25%;
+			}
+			.navbar a{
+				color: white;
+				text-decoration: none;
+				font-size: 8px;
+			}
+			.navbar li {
+				margin-left: 1%;
+				margin-right: 4%;
+				
+			}
+			.navbar li i{
+				max-width: 1%;
+				margin-right: 20%;
+			}
+			.navbar li input {
+				background-color: grey;
+				border: 1px solid white;
+				border-right: none;
+				color: white;
+				height: 20px;
+				width: 40%;
+			}
+			.navbar li button{
+				background-color: #3d3d3d;
+				color: white;
+				border: 0px solid white;
+				border-left: none;
+				height: 25px;
+				cursor: pointer;
+			}
+			.card {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: grey;
+				margin: 3%;
+				padding: 2%;
+				margin-left: 2%;
+				margin-right: 2%;
+			}
+			.card1{
+				margin-top: 2%;
+				border: 2px solid black;
+				width: 100px;
+				margin-right: 1%;
+				margin-left: 1%;
+			}
+			.card1 div img {
+				 margin-bottom: -40%; 
+				 height: 60px; 
+				 width: 100px;
+			}
+			.purchase {
+				cursor: pointer;
+				background-color: #3d3d3d;
+				margin-top: 36%; 
+				padding-left: 20%; 
+				padding-right: 20%; 
+				text-align: center; 
+				color: white; 
+				padding-top: 2%; 
+				padding-bottom: 2%;
+				font-size: 10px;
+			}
+
+		}
+	</style>
+</head>
+<body>
+
+<div class="navbar">
+		<a href="#"><img src="CDKLOGO111.PNG" style="max-width: 10%; margin: 1%; border-radius: 50%;"></a>
+	<ul>
+		<li><a href="#"><i class="fas fa-home"></i> &nbsp;Home</a></li>
+		<li><a href="#"><i class="fas fa-phone"></i>&nbsp;Contact Us</a></li>
+		<li><a href="#"><i class="fa fa-user-circle"></i> &nbsp;Profile</a></li>
+		<li><input type="text" name="search" placeholder="search..." ><button><i class="fas fa-search"></i> Search</button></li>
+	</ul>
+</div>
+
+<div class="card">
+	<div class="card1">
+		<div>
+			<img src="CDK 8.PNG">
+		</div>
+		<div class="purchase">
+			<h3>Purchase</h3>
+		</div>
+	</div>
+	<div class="card1">
+		<div>
+			<img src="CDK 12.JPG">
+		</div>
+		<div class="purchase">
+			<h3>Purchase</h3>
+		</div>
+	</div>
+	<div class="card1">
+		<div>
+			<img src="CDK 11.JPG">
+		</div>
+		<div class="purchase">
+			<h3>Purchase</h3>
+		</div>
+	</div>
+	<div class="card1">
+		<div>
+			<img src="CDK 10.PNG">
+		</div>
+		<div class="purchase">
+			<h3>Purchase</h3>
+		</div>
+	</div>
+</div>
+
+<div class="card">
+	<div class="card1">
+		<div>
+			<img src="CDK 3.PNG" >
+		</div>
+		<div class="purchase">
+			<h3>Purchase</h3>
+		</div>
+	</div>
+	<div class="card1">
+		<div>
+			<img src="CDK 4.PNG">
+		</div>
+		<div class="purchase" >
+			<h3>Purchase</h3>
+		</div>
+	</div>
+	<div class="card1">
+		<div>
+			<img src="CDK 7.PNG">
+		</div>
+		<div class="purchase">
+			<h3>Purchase</h3>
+		</div>
+	</div>
+	<div class="card1">
+		<div>
+			<img src="CDK 9.PNG">
+		</div>
+		<div class="purchase">
+			<h3>Purchase</h3>
+		</div>
+	</div>
+</div>
+
+<div class="card">
+	<div class="card1">
+		<div>
+			<img src="CDK 8.PNG">
+		</div>
+		<div class="purchase">
+			<h3>Purchase</h3>
+		</div>
+	</div>
+	<div class="card1">
+		<div>
+			<img src="CDK 12.JPG">
+		</div>
+		<div class="purchase">
+			<h3>Purchase</h3>
+		</div>
+	</div>
+	<div class="card1">
+		<div>
+			<img src="CDK 11.JPG">
+		</div>
+		<div class="purchase">
+			<h3>Purchase</h3>
+		</div>
+	</div>
+	<div class="card1">
+		<div>
+			<img src="CDK 10.PNG">
+		</div>
+		<div class="purchase">
+			<h3>Purchase</h3>
+		</div>
+	</div>
+</div>
+
+<div class="card">
+	<div class="card1">
+		<div>
+			<img src="CDK 3.PNG">
+		</div>
+		<div class="purchase">
+			<h3>Purchase</h3>
+		</div>
+	</div>
+	<div class="card1">
+		<div>
+			<img src="CDK 4.PNG">
+		</div>
+		<div class="purchase">
+			<h3>Purchase</h3>
+		</div>
+	</div>
+	<div class="card1">
+		<div>
+			<img src="CDK 7.PNG">
+		</div>
+		<div class="purchase">
+			<h3>Purchase</h3>
+		</div>
+	</div>
+	<div class="card1">
+		<div>
+			<img src="CDK 9.PNG">
+		</div>
+		<div class="purchase">
+			<h3>Purchase</h3>
+		</div>
+	</div>
+</div>
+
+<div class="card">
+	<div class="card1">
+		<div>
+			<img src="CDK 8.PNG">
+		</div>
+		<div class="purchase">
+			<h3>Purchase</h3>
+		</div>
+	</div>
+	<div class="card1">
+		<div>
+			<img src="CDK 12.JPG">
+		</div>
+		<div class="purchase">
+			<h3>Purchase</h3>
+		</div>
+	</div>
+	<div class="card1">
+		<div>
+			<img src="CDK 11.JPG">
+		</div>
+		<div class="purchase">
+			<h3>Purchase</h3>
+		</div>
+	</div>
+	<div class="card1">
+		<div>
+			<img src="CDK 10.PNG">
+		</div>
+		<div class="purchase">
+			<h3>Purchase</h3>
+		</div>
+	</div>
+</div>
+
+<div class="card">
+	<div class="card1">
+		<div>
+			<img src="CDK 8.PNG" >
+		</div>
+		<div class="purchase">
+			<h3>Purchase</h3>
+		</div>
+	</div>
+	<div class="card1">
+		<div>
+			<img src="CDK 12.JPG">
+		</div>
+		<div class="purchase">
+			<h3>Purchase</h3>
+		</div>
+	</div>
+	<div class="card1">
+		<div>
+			<img src="CDK 11.JPG">
+		</div>
+		<div class="purchase">
+			<h3>Purchase</h3>
+		</div>
+	</div>
+	<div class="card1">
+		<div>
+			<img src="CDK 10.PNG">
+		</div>
+		<div class="purchase">
+			<h3>Purchase</h3>
+		</div>
+	</div>
+</div>
+
+<div class="card">
+	<div class="card1">
+		<div>
+			<img src="CDK 8.PNG">
+		</div>
+		<div class="purchase">
+			<h3>Purchase</h3>
+		</div>
+	</div>
+	<div class="card1">
+		<div>
+			<img src="CDK 12.JPG">
+		</div>
+		<div class="purchase">
+			<h3>Purchase</h3>
+		</div>
+	</div>
+	<div class="card1">
+		<div>
+			<img src="CDK 11.JPG">
+		</div>
+		<div class="purchase">
+			<h3>Purchase</h3>
+		</div>
+	</div>
+	<div class="card1">
+		<div>
+			<img src="CDK 10.PNG">
+		</div>
+		<div class="purchase">
+			<h3>Purchase</h3>
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>
